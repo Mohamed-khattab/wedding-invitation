@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mohamed &amp; Hajer — Wedding</title>
+  <!-- EDIT: description shown in link previews (WhatsApp/Facebook/etc) -->
+  <meta name="description" content="You're invited to the wedding of Mohamed & Hajer — Thursday, August 20, 2026 at Infinity Wedding Hall, Damanhur." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== Envelope intro ===== -->
+  <div class="envelope-overlay" id="envelope-overlay" role="button" tabindex="0"
+       aria-label="Open the invitation">
+    <div class="env">
+      <div class="env-body">
+        <p class="env-names">Wedding Invitation</p>
+        <svg class="env-flourish" viewBox="0 0 120 24" aria-hidden="true">
+          <path d="M10 14 Q40 2 60 14 Q80 26 110 14" fill="none" stroke="#c87a8a" stroke-width="1.2"/>
+          <circle cx="60" cy="14" r="2.5" fill="#f4c6cb" stroke="#c87a8a" stroke-width="1"/>
+          <circle cx="35" cy="9"  r="2"   fill="#fdfaf3" stroke="#c47550" stroke-width="1"/>
+          <circle cx="85" cy="9"  r="2"   fill="#e7a4b3" stroke="#c87a8a" stroke-width="1"/>
+        </svg>
+      </div>
+      <div class="env-flap"></div>
+      <div class="env-seal" aria-hidden="true">
+        <!-- EDIT: your initials -->
+        <span class="env-seal-initials">M&amp;H</span>
+      </div>
+    </div>
+    <p class="env-hint">tap to open</p>
+  </div>
+
+  <!-- ===== Hero ===== -->
+  <header class="hero">
+    <svg class="flower flower-left" viewBox="0 0 120 200" aria-hidden="true">
+      <g fill="none" stroke="#8a9b7a" stroke-width="1.5">
+        <path d="M60 180 Q55 140 60 100 Q65 60 60 20" />
+        <path d="M60 150 Q40 140 25 120" />
+        <path d="M60 130 Q80 125 95 110" />
+        <path d="M60 110 Q42 100 30 85" />
+      </g>
+      <g fill="#fdfaf3" stroke="#c47550" stroke-width="1.2">
+        <path d="M60 20 Q48 0 55 -5 Q60 -2 60 10 Q60 -2 65 -5 Q72 0 60 20 Z" transform="translate(0 12)" />
+        <path d="M60 90 Q44 78 52 70 Q60 76 60 88 Q60 76 68 70 Q76 78 60 90 Z" />
+        <path d="M28 118 Q18 108 22 100 Q30 104 30 116 Q30 104 38 102 Q42 110 28 118 Z" />
+        <path d="M96 108 Q86 96 92 90 Q100 94 100 106 Q100 94 108 92 Q112 100 96 108 Z" />
+      </g>
+    </svg>
+
+    <div class="hero-text">
+      <p class="kicker">You're invited to our wedding</p>
+      <h1 class="names">
+        <!-- EDIT: names also appear in app.js CONFIG.names -->
+        <span>Mohamed</span>
+        <span class="amp">&amp;</span>
+        <span>Hajer</span>
+      </h1>
+    </div>
+
+    <svg class="flower flower-right" viewBox="0 0 120 200" aria-hidden="true">
+      <g fill="none" stroke="#8a9b7a" stroke-width="1.5">
+        <path d="M60 180 Q65 140 60 100 Q55 60 60 20" />
+        <path d="M60 150 Q80 138 95 118" />
+        <path d="M60 128 Q40 122 25 108" />
+        <path d="M60 108 Q78 98 90 82" />
+      </g>
+      <g fill="#f4c6cb" stroke="#c87a8a" stroke-width="1.2">
+        <circle cx="60" cy="30" r="14" />
+        <path d="M60 18 Q54 30 60 42 Q66 30 60 18 Z" fill="#c87a8a" opacity=".6" />
+      </g>
+      <g fill="#e7a4b3" stroke="#c87a8a" stroke-width="1.2">
+        <path d="M25 108 Q22 95 30 90 Q40 92 40 105 Q40 115 32 116 Q26 116 25 108 Z" />
+      </g>
+      <g fill="#f0b9a4" stroke="#c47550" stroke-width="1.2">
+        <path d="M90 82 Q86 70 94 65 Q104 68 104 80 Q104 90 96 91 Q90 90 90 82 Z" />
+      </g>
+    </svg>
+  </header>
+
+  <!-- ===== Countdown ===== -->
+  <section class="section countdown-section reveal">
+    <h2 class="section-title">Counting the days</h2>
+    <div class="countdown" id="countdown" aria-live="polite">
+      <div class="cd-cell"><span class="cd-num" id="cd-days">—</span><span class="cd-label">days</span></div>
+      <div class="cd-cell"><span class="cd-num" id="cd-hours">—</span><span class="cd-label">hours</span></div>
+      <div class="cd-cell"><span class="cd-num" id="cd-mins">—</span><span class="cd-label">minutes</span></div>
+      <div class="cd-cell"><span class="cd-num" id="cd-secs">—</span><span class="cd-label">seconds</span></div>
+    </div>
+    <p class="countdown-done" id="countdown-done" hidden>Thank you for being part of our story.</p>
+  </section>
+
+  <!-- ===== Event details ===== -->
+  <section class="section details-section reveal">
+    <h2 class="section-title">The details</h2>
+
+    <div class="detail-card">
+      <div class="detail-item">
+        <svg class="detail-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <rect x="3" y="5" width="18" height="16" rx="2.5"/>
+          <path d="M3 9.5h18M8 3v4M16 3v4"/>
+        </svg>
+        <div class="detail-text">
+          <!-- EDIT: date/time (also set eventISO in app.js CONFIG) -->
+          <span class="detail-main">Thursday, August 20, 2026</span>
+          <span class="detail-sub">9:30 PM</span>
+        </div>
+      </div>
+
+      <div class="detail-divider"></div>
+
+      <div class="detail-item">
+        <svg class="detail-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z"/>
+          <circle cx="12" cy="10" r="2.5"/>
+        </svg>
+        <div class="detail-text">
+          <!-- EDIT: venue name -->
+          <span class="detail-main">Infinity Wedding Hall</span>
+          <span class="detail-sub">Damanhur, Beheira, Egypt</span>
+        </div>
+      </div>
+
+      <div class="detail-divider"></div>
+
+      <!-- Roll-up rows — edit the copy inside each .acc-panel-inner -->
+      <div class="accordion">
+        <div class="acc-item">
+          <button type="button" class="acc-trigger" aria-expanded="false" aria-controls="acc-dress">
+            <span class="acc-title">Dress code</span>
+            <svg class="acc-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="acc-panel" id="acc-dress" role="region">
+            <div class="acc-panel-inner">
+              <!-- EDIT: dress code note + colors to avoid (or delete this whole acc-item) -->
+              <p class="dress-note">We kindly ask that you avoid the colors below. 💗</p>
+              <ul class="color-list" aria-label="Colors to avoid">
+                <li><span class="swatch" style="background:#F3ECDF"></span>Off-white dresses</li>
+                <li><span class="swatch" style="background:#B7BAB8"></span>Light gray suits</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="acc-item">
+          <button type="button" class="acc-trigger" aria-expanded="false" aria-controls="acc-schedule">
+            <span class="acc-title">Schedule of the night</span>
+            <svg class="acc-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="acc-panel" id="acc-schedule" role="region">
+            <div class="acc-panel-inner">
+              <!-- EDIT: your own schedule -->
+              <ul class="acc-schedule">
+                <li><time>9:30 PM</time> Guest entrance</li>
+                <li><time>10:00 PM</time> Groom &amp; bride entrance</li>
+                <li><time>10:15 PM</time> Bride's jewelry ceremony</li>
+                <li><time>10:30 PM</time> Dessert reception</li>
+                <li><time>11:00 PM</time> Dancing &amp; celebration</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="action-row">
+      <!-- EDIT: your Google Maps share link -->
+      <a class="btn btn-primary"
+         href="https://maps.app.goo.gl/rQzUpLJPhTiAVCQp8"
+         target="_blank" rel="noopener">Open in Google Maps</a>
+      <a class="btn" id="gcal-btn" href="#" target="_blank" rel="noopener">Add to Google Calendar</a>
+    </div>
+  </section>
+
+  <!-- ===== Hashtag ===== -->
+  <section class="section hashtag-section reveal">
+    <h2 class="section-title">Share the joy</h2>
+    <!-- EDIT: hashtag (also set CONFIG.hashtag in app.js) -->
+    <button class="hashtag" id="hashtag" type="button" aria-label="Copy hashtag to clipboard">
+      #MohamedAndHajer
+      <span class="hashtag-hint">tap to copy</span>
+    </button>
+  </section>
+
+  <!-- ===== Music recommendation ===== -->
+  <section class="section music-rec-section reveal">
+    <h2 class="section-title">Set the mood</h2>
+    <svg class="music-rec-icon" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M9 18V5l12-2v13" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="6" cy="18" r="3" fill="none" stroke="currentColor" stroke-width="1.5"/>
+      <circle cx="18" cy="16" r="3" fill="none" stroke="currentColor" stroke-width="1.5"/>
+    </svg>
+    <p class="music-rec-note">Got a song that has to be played on the night? Share your picks and help us build the playlist. 🎶</p>
+    <!-- EDIT: link to your own Google Form (Forms → + → collect a "song" short-answer field) -->
+    <a class="btn btn-primary"
+       href="https://docs.google.com/forms/d/e/REPLACE_ME/viewform"
+       target="_blank" rel="noopener">Recommend a song</a>
+  </section>
+
+  <!-- ===== Photo sharing ===== -->
+  <section class="section gate-section reveal">
+    <h2 class="section-title">Share your photos</h2>
+    <p class="gate-label">Got photos from the night? We'd love to see them — send them our way on WhatsApp. 💌</p>
+    <a class="btn btn-primary" href="https://wa.me/201032665638" target="_blank" rel="noopener">Send on WhatsApp</a>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <svg viewBox="0 0 200 30" aria-hidden="true" class="footer-floral">
+      <path d="M10 20 Q60 5 100 20 Q140 35 190 20" fill="none" stroke="#c87a8a" stroke-width="1.2"/>
+      <circle cx="60" cy="14" r="3" fill="#f4c6cb" stroke="#c87a8a" stroke-width="1"/>
+      <circle cx="100" cy="20" r="3.5" fill="#fdfaf3" stroke="#c47550" stroke-width="1"/>
+      <circle cx="140" cy="26" r="3" fill="#e7a4b3" stroke="#c87a8a" stroke-width="1"/>
+    </svg>
+    <!-- EDIT: footer line -->
+    <p>August 20, 2026 · Damanhur</p>
+  </footer>
+
+  <!-- ===== Music toggle ===== -->
+  <button class="music-toggle" id="music-toggle" type="button" aria-label="Toggle background music" aria-pressed="false">
+    <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+      <path id="music-icon" d="M9 18V5l12-2v13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="6" cy="18" r="3" fill="none" stroke="currentColor" stroke-width="2"/>
+      <circle cx="18" cy="16" r="3" fill="none" stroke="currentColor" stroke-width="2"/>
+      <line id="music-slash" x1="3" y1="21" x2="21" y2="3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    </svg>
+  </button>
+  <!-- EDIT: drop your own royalty-free mp3 next to this file and update src -->
+  <audio id="bg-audio" src="music.mp3" loop preload="none"></audio>
+
+  <!-- ===== Toast ===== -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
