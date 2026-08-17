@@ -1,5 +1,5 @@
 /* ============================================================
-   Wedding invitation page
+   Engagement invitation page
    Plain JS. No build step. Drop into GitHub Pages and ship.
    ============================================================ */
 
@@ -101,7 +101,7 @@ function showToast(msg) {
     d.toISOString().replace(/[-:]/g, "").replace(/\.\d{3}/, "");
 
   const title = encodeURIComponent(
-    `Wedding of ${CONFIG.names.groom} & ${CONFIG.names.bride}`
+    `Engagement of ${CONFIG.names.groom} & ${CONFIG.names.bride}`
   );
   const location = encodeURIComponent(
     `${CONFIG.venue.name}, ${CONFIG.venue.address}`
