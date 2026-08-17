@@ -146,19 +146,14 @@ body {
 }
 
 .env-hint {
-  position: fixed;
-  bottom: 7vh;
-  left: 0;
-  right: 0;
   text-align: center;
   font-family: var(--sans);
   font-size: .72rem;
   letter-spacing: .25em;
   text-transform: uppercase;
   color: var(--ink-soft);
-  margin: 0;
+  margin: 1.75rem 0 0;
   opacity: .85;
-  z-index: 6;
   animation: env-hint-pulse 1.6s ease-in-out infinite;
 }
 
@@ -263,12 +258,12 @@ body {
 .finale {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 1rem 1.25rem 3rem;
+  padding: 3rem 1.25rem;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: center;
-  gap: .5rem 3rem;
+  gap: 2.5rem 3rem;
 }
 
 .finale-photo {
