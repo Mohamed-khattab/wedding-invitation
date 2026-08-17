@@ -137,6 +137,15 @@ function showToast(msg) {
   audio.volume = 0.5;
   let playing = false;
 
+  // Playlist: plays each track in order, then loops back to the first.
+  const playlist = ["music.mp3", "music2.mp3"];
+  let track = 0;
+  audio.addEventListener("ended", () => {
+    track = (track + 1) % playlist.length;
+    audio.src = playlist[track];
+    audio.play().catch(() => {});
+  });
+
   function setState(on) {
     playing = on;
     btn.setAttribute("aria-pressed", on ? "true" : "false");
