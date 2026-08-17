@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="seal" cx="38%" cy="32%" r="75%">
+      <stop offset="0%" stop-color="#d98c9b"/>
+      <stop offset="45%" stop-color="#b8455a"/>
+      <stop offset="100%" stop-color="#8e2d3f"/>
+    </radialGradient>
+  </defs>
+  <circle cx="32" cy="32" r="30" fill="url(#seal)"/>
+  <text x="32" y="40" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-weight="600" font-size="21" fill="#fff0eb">M&amp;H</text>
+</svg>

@@ -6,6 +6,18 @@
   <title>Mohamed &amp; Hajer — Wedding</title>
   <!-- EDIT: description shown in link previews (WhatsApp/Facebook/etc) -->
   <meta name="description" content="You're invited to the wedding of Mohamed & Hajer — Thursday, August 20, 2026 at Infinity Wedding Hall, Damanhur." />
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <meta name="theme-color" content="#faf6f0" />
+
+  <!-- Link preview card (WhatsApp/Facebook/etc) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Mohamed & Hajer — Wedding" />
+  <meta property="og:description" content="Thursday, August 20, 2026 · Infinity Wedding Hall, Damanhur" />
+  <meta property="og:image" content="https://mohamed-khattab.github.io/wedding-invitation/throwback-og.jpg" />
+  <meta property="og:url" content="https://mohamed-khattab.github.io/wedding-invitation/" />
+  <meta name="twitter:card" content="summary_large_image" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -186,26 +198,34 @@
     </button>
   </section>
 
-  <!-- ===== Music recommendation ===== -->
-  <section class="section music-rec-section reveal">
-    <h2 class="section-title">Set the mood</h2>
-    <svg class="music-rec-icon" viewBox="0 0 24 24" aria-hidden="true">
-      <path d="M9 18V5l12-2v13" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      <circle cx="6" cy="18" r="3" fill="none" stroke="currentColor" stroke-width="1.5"/>
-      <circle cx="18" cy="16" r="3" fill="none" stroke="currentColor" stroke-width="1.5"/>
-    </svg>
-    <p class="music-rec-note">Got a song that has to be played on the night? Share your picks and help us build the playlist. 🎶</p>
-    <a class="btn btn-primary"
-       href="https://docs.google.com/forms/d/e/1FAIpQLScqCZ626TzMppv3KO7qm_EmnTO7Q0fQMR8mQ-kBo8bHytKfNw/viewform"
-       target="_blank" rel="noopener">Recommend a song</a>
-  </section>
+  <!-- ===== Finale: throwback photo + song request + photo sharing ===== -->
+  <div class="finale reveal">
+    <div class="finale-photo">
+      <img src="throwback.png" alt="Mohamed & Hajer, when they were young" loading="lazy" />
+      <p class="finale-caption">way back when 💕</p>
+    </div>
 
-  <!-- ===== Photo sharing ===== -->
-  <section class="section gate-section reveal">
-    <h2 class="section-title">Share your photos</h2>
-    <p class="gate-label">Got photos from the night? We'd love to see them — send them our way on WhatsApp. 💌</p>
-    <a class="btn btn-primary" href="https://wa.me/201032665638" target="_blank" rel="noopener">Send on WhatsApp</a>
-  </section>
+    <div class="finale-content">
+      <div class="finale-block">
+        <h2 class="section-title">Set the mood</h2>
+        <svg class="music-rec-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M9 18V5l12-2v13" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="6" cy="18" r="3" fill="none" stroke="currentColor" stroke-width="1.5"/>
+          <circle cx="18" cy="16" r="3" fill="none" stroke="currentColor" stroke-width="1.5"/>
+        </svg>
+        <p class="music-rec-note">Got a song that has to be played on the night? Share your picks and help us build the playlist. 🎶</p>
+        <a class="btn btn-primary"
+           href="https://docs.google.com/forms/d/e/1FAIpQLScqCZ626TzMppv3KO7qm_EmnTO7Q0fQMR8mQ-kBo8bHytKfNw/viewform"
+           target="_blank" rel="noopener">Recommend a song</a>
+      </div>
+
+      <div class="finale-block">
+        <h2 class="section-title">Share your photos</h2>
+        <p class="gate-label">Got photos from the night? We'd love to see them — send them our way on WhatsApp. 💌</p>
+        <a class="btn btn-primary" href="https://wa.me/201032665638" target="_blank" rel="noopener">Send on WhatsApp</a>
+      </div>
+    </div>
+  </div>
 
   <!-- ===== Footer ===== -->
   <footer class="footer">
